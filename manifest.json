@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YT Shorts Custom PiP",
+  "version": "1.0",
+  "description": "Picture-in-Picture interaktif untuk YouTube Shorts dengan kontrol lengkap.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
